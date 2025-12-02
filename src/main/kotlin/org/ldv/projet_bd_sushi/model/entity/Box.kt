@@ -25,8 +25,8 @@ open class Box (
     val saveurs: MutableSet<Saveur>,
 
     //Relation one to many d'une box à ses aliments
-    @OneToMany(mappedBy = "boxes")
-    val alimentBox: MutableList<AlimentBox>
+    @OneToMany(mappedBy = "box")
+    val alimentBoxes: MutableList<AlimentBox>
 
 ){
 }
